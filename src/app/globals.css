@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+:root {
+  /* Corporate Colors */
+  --corporate-orange: #FF6B00;
+  --corporate-orange-hover: #e65c00;
+  --bg-light: #F8F9FA;
+  --text-dark: #1A1A1A;
+
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-corporate-orange: var(--corporate-orange);
+  --color-corporate-orange-hover: var(--corporate-orange-hover);
+
+  --font-sans: var(--font-montserrat);
+  --font-heading: var(--font-montserrat);
+  /* Using same for now */
+
+  --animate-fade-in: fade-in 0.5s ease-in-out;
+  --animate-slide-up: slide-up 0.5s ease-out;
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slide-up {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-montserrat), sans-serif;
+  overflow-x: hidden;
+  /* Prevent horizontal scroll from animations */
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--corporate-orange);
+}
