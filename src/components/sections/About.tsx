@@ -61,7 +61,7 @@ export function About() {
 
                         {/* Title */}
                         <motion.div variants={itemVariants} className="mb-8">
-                            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-corporate-blue leading-[1.1]">
+                            <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-corporate-blue leading-[1.1]">
                                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-corporate-orange to-orange-500">
                                     Excelencia en Ingeniería
                                 </span> <br />

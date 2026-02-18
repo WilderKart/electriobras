@@ -37,7 +37,7 @@ export function Process() {
                                     <step.icon className="text-gray-400 group-hover:text-corporate-orange transition-colors" size={28} />
                                 </div>
                                 <h3 className="text-lg font-bold text-gray-900 mb-2">{step.title}</h3>
-                                <p className="text-sm text-gray-500 max-w-[150px]">{step.desc}</p>
+                                <p className="text-sm text-gray-500 max-w-xs md:max-w-[150px]">{step.desc}</p>
                             </motion.div>
                         ))}
                     </div>

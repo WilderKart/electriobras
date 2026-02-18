@@ -42,7 +42,7 @@ export function Capacity() {
             </div>
 
             <div className="container mx-auto px-6 relative z-10">
-                <div className="grid grid-cols-2 lg:grid-cols-4 gap-12">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
                     <Counter value={150} label="Proyectos Ejecutados" />
                     <Counter value={50000} label="Metros de Canalización" />
                     <Counter value={45} label="Profesionales Activos" />

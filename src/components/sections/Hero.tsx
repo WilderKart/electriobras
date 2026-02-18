@@ -57,7 +57,7 @@ export function Hero() {
 
                     <motion.h1
                         variants={itemVariants}
-                        className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight tracking-tight mb-6"
+                        className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-snug md:leading-tight tracking-tight mb-6"
                     >
                         Ingeniería Aplicada en <br className="hidden md:block" />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-corporate-orange to-orange-400">

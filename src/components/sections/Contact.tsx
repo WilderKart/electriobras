@@ -20,7 +20,7 @@ export function Contact() {
             <div className="container mx-auto px-6 max-w-4xl">
                 <div className="text-center mb-16">
                     <span className="text-corporate-orange font-semibold tracking-wider text-sm uppercase">CONTÁCTENOS</span>
-                    <h2 className="text-4xl font-bold text-gray-900 mt-2">Hablemos de su Proyecto</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-2">Hablemos de su Proyecto</h2>
                 </div>
 
                 <motion.form

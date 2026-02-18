@@ -104,7 +104,7 @@ export function Sectors() {
                             </motion.span>
 
                             <motion.h2
-                                className="text-5xl md:text-7xl font-bold leading-tight text-white mb-6"
+                                className="text-3xl sm:text-4xl md:text-7xl font-bold leading-tight text-white mb-4 md:mb-6"
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.3 }}
@@ -113,7 +113,7 @@ export function Sectors() {
                             </motion.h2>
 
                             <motion.p
-                                className="text-lg md:text-xl text-gray-300 leading-relaxed border-l-4 border-corporate-orange pl-6 my-6"
+                                className="text-base md:text-xl text-gray-300 leading-relaxed border-l-4 border-corporate-orange pl-4 md:pl-6 my-4 md:my-6 pr-2"
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.4 }}

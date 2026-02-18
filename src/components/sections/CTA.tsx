@@ -35,7 +35,7 @@ export function CTA() {
                     viewport={{ once: false, amount: 0.3 }}
                     transition={{ delay: 0.2 }}
                 >
-                    <Button size="lg" className="bg-white text-corporate-orange hover:bg-gray-100 text-lg px-10 py-6 h-auto shadow-2xl">
+                    <Button size="lg" className="w-full sm:w-auto bg-white text-corporate-orange hover:bg-gray-100 text-lg px-6 md:px-10 py-6 h-auto shadow-2xl">
                         Solicitar Cotización Técnica
                         <ArrowRight className="ml-2 w-6 h-6" />
                     </Button>

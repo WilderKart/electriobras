@@ -63,7 +63,7 @@ export function Services() {
                             viewport={{ once: false, amount: 0.2 }}
                             transition={{ delay: index * 0.1 }}
                             whileHover={{ y: -5, boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)' }}
-                            className="p-8 rounded-2xl bg-gray-50 border border-gray-100 hover:border-corporate-orange/30 transition-all duration-300 group"
+                            className="p-6 md:p-8 rounded-2xl bg-gray-50 border border-gray-100 hover:border-corporate-orange/30 transition-all duration-300 group"
                         >
                             <div className="w-14 h-14 rounded-xl bg-gray-900 flex items-center justify-center mb-6 group-hover:bg-corporate-orange transition-colors duration-300 shadow-lg">
                                 {service.icon}
