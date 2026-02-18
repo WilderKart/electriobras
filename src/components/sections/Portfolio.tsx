@@ -5,11 +5,11 @@ import { Plus } from 'lucide-react';
 import Image from 'next/image';
 
 const projects = [
-    { id: 1, title: 'Planta Industrial Argos', category: 'Subestaciones', image: 'https://images.unsplash.com/photo-1590959651373-a8db0e65d9e5?q=80&w=800&auto=format&fit=crop' },
+    { id: 1, title: 'Planta Industrial Argos', category: 'Subestaciones', image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop' },
     { id: 2, title: 'Edificio Torre Central', category: 'Instalaciones Eléctricas', image: 'https://images.unsplash.com/photo-1487958449943-2429e8be8625?q=80&w=800&auto=format&fit=crop' },
     { id: 3, title: 'Centro Comercial Plaza', category: 'Iluminación LED', image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800&auto=format&fit=crop' },
     { id: 4, title: 'Adecuación Civil Oficinas', category: 'Obras Civiles', image: 'https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=800&auto=format&fit=crop' },
-    { id: 5, title: 'Redes Data Center', category: 'Cableado Estructurado', image: 'https://images.unsplash.com/photo-1558494949-ef2a2750d0e6?q=80&w=800&auto=format&fit=crop' },
+    { id: 5, title: 'Redes Data Center', category: 'Cableado Estructurado', image: 'https://images.unsplash.com/photo-1551703599-6b3e8379aa8c?q=80&w=800&auto=format&fit=crop' },
     { id: 6, title: 'Mantenimiento Preventivo', category: 'Industria', image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=800&auto=format&fit=crop' },
 ];
 

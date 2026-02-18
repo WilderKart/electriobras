@@ -1,6 +1,7 @@
 'use client';
-
+import Link from 'next/link';
 import { motion, Variants } from 'framer-motion';
+import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { ChevronRight } from 'lucide-react';
 
@@ -31,22 +32,21 @@ export function Hero() {
             <div className="absolute inset-0 z-0 bg-gray-900">
                 <div className="absolute inset-0 bg-black/50 z-10" /> {/* Overlay */}
                 {/* Replace with actual video component later */}
-                <video
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    className="w-full h-full object-cover opacity-60"
-                >
-                    <source src="https://assets.mixkit.co/videos/preview/mixkit-engineering-plant-workers-walking-in-slow-motion-4828-large.mp4" type="video/mp4" />
-                </video>
+                <Image
+                    src="/hero/hero.png"
+                    alt="Ingeniería Eléctrica y Civil"
+                    fill
+                    className="object-cover opacity-60"
+                    priority
+                />
             </div>
 
             <div className="container relative z-20 px-6 mx-auto text-center md:text-left">
                 <motion.div
                     variants={containerVariants}
                     initial="hidden"
-                    animate="visible"
+                    whileInView="visible"
+                    viewport={{ once: false, amount: 0.3 }}
                     className="max-w-4xl"
                 >
                     <motion.div variants={itemVariants} className="mb-4">
@@ -59,9 +59,9 @@ export function Hero() {
                         variants={itemVariants}
                         className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight tracking-tight mb-6"
                     >
-                        Energía y Construcción con <br className="hidden md:block" />
+                        Ingeniería Aplicada en <br className="hidden md:block" />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-corporate-orange to-orange-400">
-                            Precisión Técnica
+                            Instalaciones Eléctricas y Obras Civiles Especializadas
                         </span>
                     </motion.h1>
 
@@ -72,14 +72,22 @@ export function Hero() {
                         Ejecución de proyectos eléctricos y adecuaciones civiles para constructoras, industrias y empresas en toda Colombia con altos estándares de calidad y seguridad.
                     </motion.p>
 
+                    import Link from 'next/link';
+                    // ... previous imports
+
+                    // ... function Hero
                     <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                        <Button size="lg" className="text-base px-8 h-14">
-                            Solicitar Cotización Técnica
-                            <ChevronRight className="ml-2 h-5 w-5" />
-                        </Button>
-                        <Button variant="outline" size="lg" className="text-base px-8 h-14 border-white text-white hover:bg-white hover:text-gray-900">
-                            Ver Proyectos Recientes
-                        </Button>
+                        <Link href="#contact">
+                            <Button size="lg" className="text-base px-8 h-14">
+                                Solicitar Cotización Técnica
+                                <ChevronRight className="ml-2 h-5 w-5" />
+                            </Button>
+                        </Link>
+                        <Link href="#portfolio">
+                            <Button variant="outline" size="lg" className="text-base px-8 h-14 border-white text-white hover:bg-white hover:text-gray-900">
+                                Ver Proyectos Recientes
+                            </Button>
+                        </Link>
                     </motion.div>
                 </motion.div>
             </div>
