@@ -15,7 +15,7 @@ export function CTA() {
                 <motion.h2
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
+                    viewport={{ once: false, amount: 0.3 }}
                     className="text-4xl md:text-6xl font-bold mb-6 tracking-tight"
                 >
                     ¿Listo para iniciar su próximo proyecto?
@@ -23,7 +23,7 @@ export function CTA() {
                 <motion.p
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
+                    viewport={{ once: false, amount: 0.3 }}
                     transition={{ delay: 0.1 }}
                     className="text-xl text-white/90 mb-10 max-w-2xl mx-auto"
                 >
@@ -32,7 +32,7 @@ export function CTA() {
                 <motion.div
                     initial={{ opacity: 0, scale: 0.9 }}
                     whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true }}
+                    viewport={{ once: false, amount: 0.3 }}
                     transition={{ delay: 0.2 }}
                 >
                     <Button size="lg" className="bg-white text-corporate-orange hover:bg-gray-100 text-lg px-10 py-6 h-auto shadow-2xl">

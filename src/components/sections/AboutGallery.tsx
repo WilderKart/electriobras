@@ -66,7 +66,13 @@ export function AboutGallery() {
             {/* Column 1 */}
             <motion.div style={{ y: y1 }} className="flex flex-col gap-4">
                 {/* 0: Supervisión */}
-                <div className="relative rounded-2xl overflow-hidden shadow-lg group h-64 w-full">
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: false, amount: 0.2 }}
+                    transition={{ duration: 0.5 }}
+                    className="relative rounded-2xl overflow-hidden shadow-lg group h-64 w-full"
+                >
                     <Image
                         src={galleryImages[0].src}
                         alt={galleryImages[0].title}
@@ -77,9 +83,15 @@ export function AboutGallery() {
                         <h3 className="text-white text-lg font-bold group-hover:text-corporate-orange transition-colors duration-300">{galleryImages[0].title}</h3>
                         <p className="text-gray-200 text-xs">{galleryImages[0].description}</p>
                     </div>
-                </div>
+                </motion.div>
                 {/* 1: Gestión */}
-                <div className="relative rounded-2xl overflow-hidden shadow-lg group h-48 w-full">
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: false, amount: 0.2 }}
+                    transition={{ duration: 0.5, delay: 0.1 }}
+                    className="relative rounded-2xl overflow-hidden shadow-lg group h-48 w-full"
+                >
                     <Image
                         src={galleryImages[1].src}
                         alt={galleryImages[1].title}
@@ -90,15 +102,21 @@ export function AboutGallery() {
                         <h3 className="text-white text-lg font-bold group-hover:text-corporate-orange transition-colors duration-300">{galleryImages[1].title}</h3>
                         <p className="text-gray-200 text-xs">{galleryImages[1].description}</p>
                     </div>
-                </div>
+                </motion.div>
             </motion.div>
 
             {/* Column 2 */}
             <motion.div style={{ y: y2 }} className="flex flex-col gap-4 mt-8 md:mt-0">
                 {/* 2: Cobertura */}
-                <div className="relative rounded-2xl overflow-hidden shadow-lg group h-80 w-full">
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: false, amount: 0.2 }}
+                    transition={{ duration: 0.5, delay: 0.2 }}
+                    className="relative rounded-2xl overflow-hidden shadow-lg group h-80 w-full"
+                >
                     <Image
-                        src={galleryImages[2].src}
+                        src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=600&auto=format&fit=crop"
                         alt={galleryImages[2].title}
                         fill
                         className="object-cover transition-transform duration-700 group-hover:scale-110"
@@ -107,9 +125,15 @@ export function AboutGallery() {
                         <h3 className="text-white text-lg font-bold group-hover:text-corporate-orange transition-colors duration-300">{galleryImages[2].title}</h3>
                         <p className="text-gray-200 text-xs">{galleryImages[2].description}</p>
                     </div>
-                </div>
+                </motion.div>
                 {/* 3: RETIE */}
-                <div className="relative rounded-2xl overflow-hidden shadow-lg group h-64 w-full">
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: false, amount: 0.2 }}
+                    transition={{ duration: 0.5, delay: 0.3 }}
+                    className="relative rounded-2xl overflow-hidden shadow-lg group h-64 w-full"
+                >
                     <Image
                         src={galleryImages[3].src}
                         alt={galleryImages[3].title}
@@ -120,13 +144,19 @@ export function AboutGallery() {
                         <h3 className="text-white text-lg font-bold group-hover:text-corporate-orange transition-colors duration-300">{galleryImages[3].title}</h3>
                         <p className="text-gray-200 text-xs">{galleryImages[3].description}</p>
                     </div>
-                </div>
+                </motion.div>
             </motion.div>
 
             {/* Column 3 - Hidden on mobile, visible on md+ */}
             <motion.div style={{ y: y3 }} className="hidden md:flex flex-col gap-4 mt-12">
                 {/* 4: Seguridad */}
-                <div className="relative rounded-2xl overflow-hidden shadow-lg group h-56 w-full">
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: false, amount: 0.2 }}
+                    transition={{ duration: 0.5, delay: 0.4 }}
+                    className="relative rounded-2xl overflow-hidden shadow-lg group h-56 w-full"
+                >
                     <Image
                         src={galleryImages[4].src}
                         alt={galleryImages[4].title}
@@ -137,9 +167,15 @@ export function AboutGallery() {
                         <h3 className="text-white text-lg font-bold group-hover:text-corporate-orange transition-colors duration-300">{galleryImages[4].title}</h3>
                         <p className="text-gray-200 text-xs">{galleryImages[4].description}</p>
                     </div>
-                </div>
+                </motion.div>
                 {/* 5: Capital Humano */}
-                <div className="relative rounded-2xl overflow-hidden shadow-lg group h-48 w-full">
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: false, amount: 0.2 }}
+                    transition={{ duration: 0.5, delay: 0.5 }}
+                    className="relative rounded-2xl overflow-hidden shadow-lg group h-48 w-full"
+                >
                     <Image
                         src={galleryImages[5].src}
                         alt={galleryImages[5].title}
@@ -150,7 +186,7 @@ export function AboutGallery() {
                         <h3 className="text-white text-lg font-bold group-hover:text-corporate-orange transition-colors duration-300">{galleryImages[5].title}</h3>
                         <p className="text-gray-200 text-xs">{galleryImages[5].description}</p>
                     </div>
-                </div>
+                </motion.div>
             </motion.div>
         </div>
     );

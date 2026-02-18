@@ -60,7 +60,7 @@ export function Services() {
                             key={index}
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
+                            viewport={{ once: false, amount: 0.2 }}
                             transition={{ delay: index * 0.1 }}
                             whileHover={{ y: -5, boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)' }}
                             className="p-8 rounded-2xl bg-gray-50 border border-gray-100 hover:border-corporate-orange/30 transition-all duration-300 group"

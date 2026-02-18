@@ -26,7 +26,7 @@ export function Contact() {
                 <motion.form
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
+                    viewport={{ once: false, amount: 0.3 }}
                     onSubmit={handleSubmit(onSubmit)}
                     className="bg-gray-50 p-8 md:p-12 rounded-2xl shadow-sm border border-gray-100 space-y-6"
                 >

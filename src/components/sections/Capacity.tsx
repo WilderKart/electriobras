@@ -5,13 +5,15 @@ import { useEffect, useRef, useState } from 'react';
 
 function Counter({ value, label }: { value: number; label: string }) {
     const ref = useRef(null);
-    const isInView = useInView(ref, { once: true, margin: "-100px" });
+    const isInView = useInView(ref, { once: false, margin: "-100px" });
     const spring = useSpring(0, { mass: 0.8, stiffness: 75, damping: 15 });
     const displayValue = useTransform(spring, (current) => Math.round(current));
 
     useEffect(() => {
         if (isInView) {
             spring.set(value);
+        } else {
+            spring.set(0); // Optional: reset to 0 when out of view
         }
     }, [isInView, value, spring]);
 
@@ -21,7 +23,7 @@ function Counter({ value, label }: { value: number; label: string }) {
                 className="text-4xl md:text-6xl font-bold text-white mb-2"
                 initial={{ opacity: 0, scale: 0.5 }}
                 whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
+                viewport={{ once: false }}
             >
                 <motion.span>{displayValue}</motion.span>+
             </motion.div>

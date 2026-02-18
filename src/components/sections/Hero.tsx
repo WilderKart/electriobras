@@ -72,10 +72,6 @@ export function Hero() {
                         Ejecución de proyectos eléctricos y adecuaciones civiles para constructoras, industrias y empresas en toda Colombia con altos estándares de calidad y seguridad.
                     </motion.p>
 
-                    import Link from 'next/link';
-                    // ... previous imports
-
-                    // ... function Hero
                     <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                         <Link href="#contact">
                             <Button size="lg" className="text-base px-8 h-14">

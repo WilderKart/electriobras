@@ -28,7 +28,7 @@ export function Portfolio() {
                             key={project.id}
                             initial={{ opacity: 0, scale: 0.9 }}
                             whileInView={{ opacity: 1, scale: 1 }}
-                            viewport={{ once: true }}
+                            viewport={{ once: false, amount: 0.2 }}
                             transition={{ delay: index * 0.1 }}
                             className="group relative overflow-hidden rounded-xl aspect-[4/3] cursor-pointer"
                         >
