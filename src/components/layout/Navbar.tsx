@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { cn } from '@/lib/utils';
@@ -38,9 +39,26 @@ export function Navbar() {
             )}
         >
             <div className="container mx-auto px-6 flex justify-between items-center">
-                <Link href="/" className="text-2xl font-bold tracking-tighter flex items-center gap-2">
-                    <span className={cn("text-corporate-orange", isScrolled ? "text-orange-600" : "text-white")}>ELECTRI</span>
-                    <span className={cn(isScrolled ? "text-gray-900" : "text-white")}>OBRAS</span>
+                <Link
+                    href="/"
+                    className="relative flex items-center h-12 w-48 transition-transform hover:scale-105"
+                    onClick={(e) => {
+                        if (window.location.pathname === '/') {
+                            e.preventDefault();
+                            window.scrollTo({ top: 0, behavior: 'smooth' });
+                        }
+                    }}
+                >
+                    <Image
+                        src="/logo/logo_electriobras.png"
+                        alt="Electriobras SAS Logo"
+                        fill
+                        className={cn(
+                            "object-contain transition-all duration-300",
+                            !isScrolled && "brightness-0 invert opacity-90" // Makes logo white on dark backgrounds
+                        )}
+                        priority
+                    />
                 </Link>
 
                 {/* Desktop Menu */}

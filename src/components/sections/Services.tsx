@@ -1,38 +1,38 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Zap, LayoutDashboard, Settings, ShieldCheck, PenTool, Cable } from 'lucide-react';
+import Image from 'next/image';
 
 const services = [
     {
-        icon: <Zap className="w-8 h-8 text-white" />,
-        title: 'Instalaciones Eléctricas',
-        description: 'Diseño y montaje de redes de media y baja tensión.',
+        image: '/servicios/sistema_electrico.webp',
+        title: 'Sistemas Eléctricos',
+        description: 'Instalación y mantenimiento de sistemas eléctricos industriales y comerciales en Cali, bajo altos estándares de seguridad.',
     },
     {
-        icon: <Cable className="w-8 h-8 text-white" />,
-        title: 'Redes Empresariales',
-        description: 'Cableado estructurado y certificación de puntos de red.',
+        image: '/servicios/obra_civil.webp',
+        title: 'Obras Civiles',
+        description: 'Adecuaciones locativas, enchapes, obra gris y adecuación de bodegas para plantas industriales y locales comerciales en Cali.',
     },
     {
-        icon: <Settings className="w-8 h-8 text-white" />,
-        title: 'Subestaciones',
-        description: 'Mantenimiento preventivo y correctivo de transformadores.',
+        image: '/servicios/mantenimiento.webp',
+        title: 'Mantenimiento Técnico',
+        description: 'Planes de mantenimiento industrial preventivo y correctivo para garantizar la continuidad operativa y seguridad de su empresa.',
     },
     {
-        icon: <LayoutDashboard className="w-8 h-8 text-white" />,
-        title: 'Adecuaciones Civiles',
-        description: 'Remodelaciones y obras civiles para oficinas y plantas.',
+        image: '/servicios/estructura_soldadura.webp',
+        title: 'Estructuras y Soldadura',
+        description: 'Fabricación y montaje de estructuras metálicas industriales con soldadores certificados y procesos de alta calidad.',
     },
     {
-        icon: <PenTool className="w-8 h-8 text-white" />,
-        title: 'Canalizaciones',
-        description: 'Infraestructura subterránea y aérea normada.',
+        image: '/servicios/cubiertas_cortinas.webp',
+        title: 'Cubiertas y Cortinas',
+        description: 'Instalación y reparación de cubiertas industriales y cortinas metálicas de seguridad para bodegas y sector comercial.',
     },
     {
-        icon: <ShieldCheck className="w-8 h-8 text-white" />,
-        title: 'Mantenimiento',
-        description: 'Planes de mantenimiento técnico especializado 24/7.',
+        image: '/servicios/emergencia.webp',
+        title: 'Emergencias y Respaldo',
+        description: 'Respuesta inmediata ante emergencias industriales, con disponibilidad continua y diagnóstico técnico especializado.',
     },
 ];
 
@@ -60,20 +60,34 @@ export function Services() {
                             key={index}
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: false, amount: 0.2 }}
+                            viewport={{ once: true, amount: 0.2 }}
                             transition={{ delay: index * 0.1 }}
-                            whileHover={{ y: -5, boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)' }}
-                            className="p-6 md:p-8 rounded-2xl bg-gray-50 border border-gray-100 hover:border-corporate-orange/30 transition-all duration-300 group"
+                            whileHover={{ y: -8 }}
+                            className="group relative flex flex-col h-full rounded-2xl overflow-hidden bg-white border border-gray-100 shadow-sm transition-all duration-300 hover:shadow-2xl hover:border-corporate-orange/20"
                         >
-                            <div className="w-14 h-14 rounded-xl bg-gray-900 flex items-center justify-center mb-6 group-hover:bg-corporate-orange transition-colors duration-300 shadow-lg">
-                                {service.icon}
+                            {/* Card Image Header */}
+                            <div className="relative h-56 w-full overflow-hidden">
+                                <Image
+                                    src={service.image}
+                                    alt={service.title}
+                                    fill
+                                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
+                                <div className="absolute bottom-4 left-6">
+                                    <div className="h-1 w-12 bg-corporate-orange rounded-full mb-2 group-hover:w-20 transition-all duration-300" />
+                                </div>
                             </div>
-                            <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-corporate-orange transition-colors">
-                                {service.title}
-                            </h3>
-                            <p className="text-gray-600 leading-relaxed">
-                                {service.description}
-                            </p>
+
+                            {/* Card Content */}
+                            <div className="p-8 flex-grow flex flex-col">
+                                <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-corporate-orange transition-colors">
+                                    {service.title}
+                                </h3>
+                                <p className="text-gray-600 leading-relaxed text-base">
+                                    {service.description}
+                                </p>
+                            </div>
                         </motion.div>
                     ))}
                 </div>

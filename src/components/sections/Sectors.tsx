@@ -8,33 +8,33 @@ import Image from 'next/image';
 const slides = [
     {
         id: 1,
-        title: "Constructoras",
-        subtitle: "Aliados Estratégicos",
-        text: "Instalaciones eléctricas completas para proyectos residenciales y comerciales. Desde el diseño hasta la certificación RETIE.",
+        title: "Construcción",
+        subtitle: "Sector Primario",
+        text: "Aliados estratégicos de constructoras en Cali y el Valle. Ejecutamos instalaciones eléctricas y obras civiles con entrega técnica certificada.",
         image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1920&auto=format&fit=crop",
         icon: <Building2 className="w-6 h-6 text-white" />
     },
     {
         id: 2,
-        title: "Industrias",
-        subtitle: "Potencia Continua",
-        text: "Mantenimiento y montaje de redes de alta complejidad para el sector industrial. Garantizamos continuidad operativa.",
+        title: "Industrial",
+        subtitle: "Potencia y Continuidad",
+        text: "Mantenimiento especializado para plantas industriales. Garantizamos operatividad bajo normas de Seguridad y Salud en el Trabajo.",
         image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1920&auto=format&fit=crop",
         icon: <Factory className="w-6 h-6 text-white" />
     },
     {
         id: 3,
-        title: "Corporativo",
-        subtitle: "Espacios Eficientes",
-        text: "Adecuaciones civiles y eléctricas para oficinas y centros empresariales modernos. Funcionalidad y estética.",
+        title: "Inmobiliario",
+        subtitle: "Gestión de Activos",
+        text: "Mantenimiento preventivo y adecuaciones locativas para edificios, centros empresariales y conjuntos residenciales.",
         image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1920&auto=format&fit=crop",
         icon: <Briefcase className="w-6 h-6 text-white" />
     },
     {
         id: 4,
-        title: "Infraestructura",
-        subtitle: "Desarrollo Urbano",
-        text: "Alumbrado público y redes de distribución que conectan comunidades. Calidad de vida a través de la energía.",
+        title: "Comercial",
+        subtitle: "Espacios de Impacto",
+        text: "Adecuaciones eléctricas y civiles para locales comerciales y centros de gran concurrencia en todo el país.",
         image: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1920&auto=format&fit=crop",
         icon: <Zap className="w-6 h-6 text-white" />
     }

@@ -17,8 +17,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'ELECTRIOBRAS S.A.S | Servicios Eléctricos y Adecuaciones Civiles',
-  description: 'Empresa especializada en proyectos eléctricos y adecuaciones civiles, orientada al sector empresarial y constructor en Colombia.',
+  title: 'Electriobras SAS | Ingeniería Eléctrica y Obras Civiles en Cali',
+  description: 'Expertos en mantenimiento eléctrico, civil y metalmecánico en Cali y el Valle del Cauca. Garantizamos continuidad operativa y seguridad en cada proyecto.',
+  keywords: ['Ingeniería Eléctrica Cali', 'Obras Civiles Cali', 'Mantenimiento Industrial Valle del Cauca', 'Electriobras SAS', 'Seguridad y Salud en el Trabajo', 'Instalaciones eléctricas industriales'],
 };
 
 export default function RootLayout({

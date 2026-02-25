@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 export function WhatsAppButton() {
     return (
         <motion.a
-            href="https://wa.me/573001234567?text=Buen día, deseo solicitar información sobre un proyecto eléctrico o adecuación civil."
+            href="https://wa.me/573148785562?text=Buen día, deseo solicitar información sobre un proyecto eléctrico o adecuación civil."
             target="_blank"
             rel="noopener noreferrer"
             className="fixed bottom-8 right-8 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl flex items-center justify-center hover:bg-[#20bd5a] transition-colors"

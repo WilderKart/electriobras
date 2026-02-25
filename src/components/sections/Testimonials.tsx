@@ -7,15 +7,19 @@ import Image from 'next/image';
 const clients = [
     { name: 'Almacenes Corona', logo: '/logos-clientes/corona.jpg' },
     { name: 'Celsia', logo: '/logos-clientes/celsia.webp' },
-    { name: 'Tecnoquímicas', logo: '/logos-clientes/tecnoquimicas.png' },
+    { name: 'Cerámica Italia', logo: '/logos-clientes/ceramica_italia.jpg' },
+    { name: 'Kimberly Clark', logo: '/logos-clientes/kimberly-clark.jpg' },
+    { name: 'Constructora Cairo', logo: '/logos-clientes/contructora_cairo.png' },
     { name: 'Almacenes Corona', logo: '/logos-clientes/corona.jpg' }, // Repeat for seamless loop
     { name: 'Celsia', logo: '/logos-clientes/celsia.webp' },
-    { name: 'Tecnoquímicas', logo: '/logos-clientes/tecnoquimicas.png' },
+    { name: 'Cerámica Italia', logo: '/logos-clientes/ceramica_italia.jpg' },
+    { name: 'Kimberly Clark', logo: '/logos-clientes/kimberly-clark.jpg' },
+    { name: 'Constructora Cairo', logo: '/logos-clientes/contructora_cairo.png' },
 ];
 
 const testimonials = [
     {
-        text: "La ejecución técnica de Electriobras en nuestra planta principal superó las expectativas. Su cumplimiento normativo y rigurosidad en seguridad industrial son impecables.",
+        text: "La ejecución técnica de Electriobras en nuestra planta principal superó las expectativas. Su cumplimiento normativo y rigurosidad en Seguridad y Salud en el Trabajo son impecables.",
         author: "Ing. Ricardo Méndez",
         role: "Director de Infraestructura",
         company: "Grupo Argos",

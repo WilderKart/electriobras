@@ -28,17 +28,18 @@ export function Hero() {
 
     return (
         <section className="relative h-screen w-full overflow-hidden flex items-center justify-center">
-            {/* Video Background Placeholder */}
             <div className="absolute inset-0 z-0 bg-gray-900">
                 <div className="absolute inset-0 bg-black/50 z-10" /> {/* Overlay */}
-                {/* Replace with actual video component later */}
-                <Image
-                    src="/hero/hero.png"
-                    alt="Ingeniería Eléctrica y Civil"
-                    fill
-                    className="object-cover opacity-60"
-                    priority
-                />
+                <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="absolute inset-0 w-full h-full object-cover opacity-60"
+                >
+                    <source src="/hero/hero.mp4" type="video/mp4" />
+                    Tu navegador no soporta el elemento de video.
+                </video>
             </div>
 
             <div className="container relative z-20 px-6 mx-auto text-center md:text-left">
@@ -49,39 +50,35 @@ export function Hero() {
                     viewport={{ once: false, amount: 0.3 }}
                     className="max-w-4xl"
                 >
-                    <motion.div variants={itemVariants} className="mb-4">
-                        <span className="inline-block py-1 px-3 rounded-full bg-corporate-orange/20 text-corporate-orange text-sm font-semibold tracking-wide border border-corporate-orange/30 backdrop-blur-sm">
-                            LÍDERES EN INGENIERÍA ELÉCTRICA
-                        </span>
-                    </motion.div>
+
 
                     <motion.h1
                         variants={itemVariants}
-                        className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-snug md:leading-tight tracking-tight mb-6"
+                        className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-snug md:leading-tight tracking-tight mb-6"
                     >
-                        Ingeniería Aplicada en <br className="hidden md:block" />
+                        Mantenimiento Eléctrico Industrial, <br className="hidden md:block" />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-corporate-orange to-orange-400">
-                            Instalaciones Eléctricas y Obras Civiles Especializadas
+                            Obras Civiles y Metalmecánica en Cali
                         </span>
                     </motion.h1>
 
                     <motion.p
                         variants={itemVariants}
-                        className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl leading-relaxed"
+                        className="text-lg md:text-xl text-gray-200 mb-8 max-w-3xl leading-relaxed font-medium"
                     >
-                        Ejecución de proyectos eléctricos y adecuaciones civiles para constructoras, industrias y empresas en toda Colombia con altos estándares de calidad y seguridad.
+                        Ejecutamos instalaciones eléctricas industriales, adecuaciones locativas y soluciones metalmecánicas para empresas en Cali, garantizando seguridad industrial, cumplimiento normativo y respaldo profesional en cada proyecto.
                     </motion.p>
 
                     <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                         <Link href="#contact">
-                            <Button size="lg" className="text-base px-8 h-14">
-                                Solicitar Cotización Técnica
+                            <Button size="lg" className="text-base px-8 h-14 bg-corporate-orange hover:bg-orange-600 border-none">
+                                Solicitar Diagnóstico Técnico
                                 <ChevronRight className="ml-2 h-5 w-5" />
                             </Button>
                         </Link>
                         <Link href="#portfolio">
                             <Button variant="outline" size="lg" className="text-base px-8 h-14 border-white text-white hover:bg-white hover:text-gray-900">
-                                Ver Proyectos Recientes
+                                Conocer Nuestra Experiencia
                             </Button>
                         </Link>
                     </motion.div>
