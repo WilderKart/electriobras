@@ -63,7 +63,7 @@ export function Services() {
                             viewport={{ once: true, amount: 0.2 }}
                             transition={{ delay: index * 0.1 }}
                             whileHover={{ y: -8 }}
-                            className="group relative flex flex-col h-full rounded-2xl overflow-hidden bg-white border border-gray-100 shadow-sm transition-all duration-300 hover:shadow-2xl hover:border-corporate-orange/20"
+                            className="group relative flex flex-col h-full rounded-2xl overflow-hidden bg-white border border-gray-100 shadow-sm transition-all duration-300 hover:shadow-2xl hover:border-corporate-orange/20 cursor-pointer"
                         >
                             {/* Card Image Header */}
                             <div className="relative h-56 w-full overflow-hidden">

@@ -32,7 +32,8 @@ El proyecto sigue una arquitectura basada en componentes reutilizables dentro de
 - **Testimonios & Clientes:**
   - Ampliación de la marquesina de clientes para incluir: **Cerámica Italia, Kimberly Clark y Constructora Cairo**, además de Corona y Celsia.
 - **CTA Final:** Llamado a la acción para cotizar.
-- **Contacto:** Formulario y datos de contacto.
+- **Contacto:** Formulario y datos de contacto actualizados con cumplimiento de Protección de Datos Personales (Ley 1581).
+- **Páginas Legales:** Creación de secciones para Términos y Condiciones y Política de Privacidad.
 - **Botón Flotante:** WhatsApp para contacto directo.
 
 ## 5. Historial de Cambios Recientes
@@ -44,7 +45,14 @@ El proyecto sigue una arquitectura basada en componentes reutilizables dentro de
 - **Optimización SEO Local:** Ajuste de metadatos y textos para posicionamiento en Cali y el Valle del Cauca.
 - **Corrección de Terminología de Seguridad:** Se reemplazó "Seguridad Industrial" por "Seguridad y Salud en el Trabajo" en todo el sitio por requerimiento normativo.
 - **Ajuste de Contacto Institucional:** Se integró la información legal (NIT, Dirección, Teléfono Fijo 602) y se ocultó el número móvil en texto plano, manteniendo solo el acceso vía botón de WhatsApp.
-- **Optimización de Performance:** Mejora en la estrategia de carga de imágenes (LCP) y optimización de metadatos en `layout.tsx`.
+- **Gobernanza de Datos y UX (Feb 2026):**
+  - Implementación de páginas de **Términos y Condiciones** y **Política de Privacidad**.
+  - Actualización del formulario de contacto con checkbox de consentimiento explícito.
+  - Corrección global de usabilidad: todos los elementos interactivos (botones, tarjetas de servicios) ahora muestran el cursor tipo "manito" (pointer).
+  - Corrección de enlaces ancla globales para permitir la navegación desde subpáginas (`/#seccion`).
+  - Reparación de enlace en botón principal de CTA hacia el formulario de contacto.
+  - Inclusión de créditos de diseño y desarrollo web ("Technoultra") en el pie de página.
+  - Actualización de textos en testimonios de empresas (Almacenes Corona y Kimberly Clark).
 
 ## 6. Estado Actual
 El proyecto está optimizado y alineado con la identidad corporativa de Electriobras SAS. Listo para pruebas de rendimiento finales en PageSpeed Insights.

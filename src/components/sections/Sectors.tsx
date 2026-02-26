@@ -10,8 +10,8 @@ const slides = [
         id: 1,
         title: "Construcción",
         subtitle: "Sector Primario",
-        text: "Aliados estratégicos de constructoras en Cali y el Valle. Ejecutamos instalaciones eléctricas y obras civiles con entrega técnica certificada.",
-        image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1920&auto=format&fit=crop",
+        text: "Aliados estratégicos de empresas en Cali. Realizamos adecuaciones, remodelaciones y obras civiles con entrega técnica certificada.",
+        image: "/sectores/construccion.png",
         icon: <Building2 className="w-6 h-6 text-white" />
     },
     {
@@ -19,23 +19,23 @@ const slides = [
         title: "Industrial",
         subtitle: "Potencia y Continuidad",
         text: "Mantenimiento especializado para plantas industriales. Garantizamos operatividad bajo normas de Seguridad y Salud en el Trabajo.",
-        image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1920&auto=format&fit=crop",
+        image: "/sectores/industrial.jpeg",
         icon: <Factory className="w-6 h-6 text-white" />
     },
     {
         id: 3,
         title: "Inmobiliario",
         subtitle: "Gestión de Activos",
-        text: "Mantenimiento preventivo y adecuaciones locativas para edificios, centros empresariales y conjuntos residenciales.",
-        image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1920&auto=format&fit=crop",
+        text: "Mantenimiento preventivo y adecuaciones locativas para edificios, centros empresariales.",
+        image: "/sectores/inmobiliario.jpeg",
         icon: <Briefcase className="w-6 h-6 text-white" />
     },
     {
         id: 4,
         title: "Comercial",
         subtitle: "Espacios de Impacto",
-        text: "Adecuaciones eléctricas y civiles para locales comerciales y centros de gran concurrencia en todo el país.",
-        image: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1920&auto=format&fit=crop",
+        text: "Adecuaciones eléctricas y civiles para locales comerciales y centros de gran concurrencia.",
+        image: "/sectores/comercial.jpeg",
         icon: <Zap className="w-6 h-6 text-white" />
     }
 ];
@@ -56,7 +56,7 @@ export function Sectors() {
     };
 
     return (
-        <section className="relative h-screen w-full overflow-hidden bg-black text-white">
+        <section id="sectors" className="relative h-screen w-full overflow-hidden bg-black text-white">
 
             {/* Background Image Layer with Crossfade */}
             <div className="absolute inset-0 z-0">

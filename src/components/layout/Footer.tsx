@@ -42,11 +42,11 @@ export function Footer() {
                     <div>
                         <h4 className="text-white font-semibold mb-6">Nuestros Servicios</h4>
                         <ul className="space-y-3 text-sm">
-                            <li><Link href="#services" className="hover:text-corporate-orange transition-colors">Sistemas Eléctricos</Link></li>
-                            <li><Link href="#services" className="hover:text-corporate-orange transition-colors">Obras Civiles</Link></li>
-                            <li><Link href="#services" className="hover:text-corporate-orange transition-colors">Mantenimiento Técnico</Link></li>
-                            <li><Link href="#services" className="hover:text-corporate-orange transition-colors">Estructuras y Soldadura</Link></li>
-                            <li><Link href="#services" className="hover:text-corporate-orange transition-colors">Cubiertas y Cortinas</Link></li>
+                            <li><Link href="/#services" className="hover:text-corporate-orange transition-colors">Sistemas Eléctricos</Link></li>
+                            <li><Link href="/#services" className="hover:text-corporate-orange transition-colors">Obras Civiles</Link></li>
+                            <li><Link href="/#services" className="hover:text-corporate-orange transition-colors">Mantenimiento Técnico</Link></li>
+                            <li><Link href="/#services" className="hover:text-corporate-orange transition-colors">Estructuras y Soldadura</Link></li>
+                            <li><Link href="/#services" className="hover:text-corporate-orange transition-colors">Cubiertas y Cortinas</Link></li>
                         </ul>
                     </div>
 
@@ -54,10 +54,10 @@ export function Footer() {
                     <div>
                         <h4 className="text-white font-semibold mb-6">Sectores</h4>
                         <ul className="space-y-3 text-sm">
-                            <li><Link href="#sectors" className="hover:text-corporate-orange transition-colors">Construcción</Link></li>
-                            <li><Link href="#sectors" className="hover:text-corporate-orange transition-colors">Industrial</Link></li>
-                            <li><Link href="#sectors" className="hover:text-corporate-orange transition-colors">Inmobiliario</Link></li>
-                            <li><Link href="#sectors" className="hover:text-corporate-orange transition-colors">Comercial</Link></li>
+                            <li><Link href="/#sectors" className="hover:text-corporate-orange transition-colors">Construcción</Link></li>
+                            <li><Link href="/#sectors" className="hover:text-corporate-orange transition-colors">Industrial</Link></li>
+                            <li><Link href="/#sectors" className="hover:text-corporate-orange transition-colors">Inmobiliario</Link></li>
+                            <li><Link href="/#sectors" className="hover:text-corporate-orange transition-colors">Comercial</Link></li>
                         </ul>
                     </div>
 
@@ -86,10 +86,23 @@ export function Footer() {
                 </div>
 
                 <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
-                    <p>&copy; {new Date().getFullYear()} ELECTRIOBRAS S.A.S. Cali - Colombia.</p>
+                    <div className="flex flex-col gap-1 text-center md:text-left">
+                        <p>&copy; {new Date().getFullYear()} ELECTRIOBRAS S.A.S. Cali - Colombia.</p>
+                        <p>
+                            Diseño y desarrollo web por:{' '}
+                            <a
+                                href="https://technoultra.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-corporate-orange hover:text-orange-500 transition-colors font-medium"
+                            >
+                                Technoultra
+                            </a>
+                        </p>
+                    </div>
                     <div className="flex gap-6 mt-4 md:mt-0">
-                        <Link href="#" className="hover:text-white transition-colors">Política de Privacidad</Link>
-                        <Link href="#" className="hover:text-white transition-colors">Términos y Condiciones</Link>
+                        <Link href="/privacidad" className="hover:text-white transition-colors">Política de Privacidad</Link>
+                        <Link href="/terminos" className="hover:text-white transition-colors">Términos y Condiciones</Link>
                     </div>
                 </div>
             </div>

@@ -2,6 +2,7 @@
 
 import { useForm } from 'react-hook-form';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input'; // Will need to create Input or just style standard ones
 import { Textarea } from '@/components/ui/textarea'; // Same for Textarea
@@ -95,10 +96,32 @@ export function Contact() {
                                 {errors.message && <span className="text-red-500 text-xs">{(errors.message as any).message}</span>}
                             </div>
 
-                            <Button type="submit" size="lg" className="w-full md:w-auto min-w-[200px] h-12 text-base">
-                                Enviar Cotización
-                                <Send className="ml-2 w-4 h-4" />
-                            </Button>
+                            <div className="flex items-start gap-3 py-2">
+                                <input
+                                    type="checkbox"
+                                    id="privacy"
+                                    {...register('privacy', { required: 'Debe aceptar la política de privacidad' })}
+                                    className="mt-1 w-4 h-4 rounded border-gray-300 text-corporate-orange focus:ring-corporate-orange cursor-pointer"
+                                />
+                                <label htmlFor="privacy" className="text-sm text-gray-600 cursor-pointer">
+                                    Autorizo el tratamiento de mis datos personales conforme a la{' '}
+                                    <Link href="/privacidad" className="text-corporate-orange underline hover:text-orange-600">
+                                        Política de Privacidad
+                                    </Link>.
+                                </label>
+                            </div>
+                            {errors.privacy && <p className="text-red-500 text-xs mt-[-10px]">{(errors.privacy as any).message}</p>}
+
+                            <div className="space-y-4">
+                                <Button type="submit" size="lg" className="w-full md:w-auto min-w-[200px] h-12 text-base">
+                                    Enviar Cotización
+                                    <Send className="ml-2 w-4 h-4" />
+                                </Button>
+                                <p className="text-[10px] text-gray-500 leading-tight">
+                                    Electriobras S.A.S. tratará sus datos conforme a la Ley 1581 de 2012.
+                                    Consulte nuestra <Link href="/privacidad" className="underline">Política de Privacidad</Link>.
+                                </p>
+                            </div>
                         </form>
                     </motion.div>
 

@@ -22,11 +22,10 @@ export function Navbar() {
 
     const navLinks = [
         { name: 'Inicio', href: '/' },
-        { name: 'Quiénes Somos', href: '#about' },
-        { name: 'Sectores', href: '#sectors' },
-        { name: 'Servicios', href: '#services' },
-        { name: 'Proyectos', href: '#portfolio' },
-        { name: 'Contacto', href: '#contact' },
+        { name: 'Quiénes Somos', href: '/#about' },
+        { name: 'Sectores', href: '/#sectors' },
+        { name: 'Servicios', href: '/#services' },
+        { name: 'Proyectos', href: '/#portfolio' },
     ];
 
     return (
@@ -75,7 +74,7 @@ export function Navbar() {
                             {link.name}
                         </Link>
                     ))}
-                    <Link href="#contact">
+                    <Link href="/#contact">
                         <Button variant="default" size="sm" className="bg-corporate-orange hover:bg-orange-600 text-white">
                             Cotizar Ahora
                         </Button>
@@ -114,7 +113,7 @@ export function Navbar() {
                                 {link.name}
                             </Link>
                         ))}
-                        <Link href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
+                        <Link href="/#contact" onClick={() => setIsMobileMenuOpen(false)}>
                             <Button className="w-full bg-corporate-orange text-white">
                                 Solicitar Cotización
                             </Button>

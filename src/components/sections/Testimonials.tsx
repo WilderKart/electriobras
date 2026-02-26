@@ -22,7 +22,7 @@ const testimonials = [
         text: "La ejecución técnica de Electriobras en nuestra planta principal superó las expectativas. Su cumplimiento normativo y rigurosidad en Seguridad y Salud en el Trabajo son impecables.",
         author: "Ing. Ricardo Méndez",
         role: "Director de Infraestructura",
-        company: "Grupo Argos",
+        company: "Almacenes Corona",
         image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop"
     },
     {
@@ -36,7 +36,7 @@ const testimonials = [
         text: "Eficiencia y profesionalismo. Han demostrado un manejo experto en instalaciones complejas, cumpliendo siempre con los cronogramas estipulados.",
         author: "Carlos E. Restrepo",
         role: "Jefe de Mantenimiento",
-        company: "Tecnoquímicas",
+        company: "Kimberly Clark",
         image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200&auto=format&fit=crop"
     }
 ];
