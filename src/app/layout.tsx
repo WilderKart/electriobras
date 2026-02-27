@@ -20,6 +20,22 @@ export const metadata: Metadata = {
   title: 'Electriobras SAS | Ingeniería Eléctrica y Obras Civiles en Cali',
   description: 'Expertos en mantenimiento eléctrico, civil y metalmecánico en Cali y el Valle del Cauca. Garantizamos continuidad operativa y seguridad en cada proyecto.',
   keywords: ['Ingeniería Eléctrica Cali', 'Obras Civiles Cali', 'Mantenimiento Industrial Valle del Cauca', 'Electriobras SAS', 'Seguridad y Salud en el Trabajo', 'Instalaciones eléctricas industriales'],
+  openGraph: {
+    title: 'Electriobras SAS | Ingeniería Eléctrica y Obras Civiles',
+    description: 'Expertos en mantenimiento eléctrico, civil y metalmecánico en Cali y el Valle del Cauca.',
+    url: 'https://electriobras.com',
+    siteName: 'Electriobras SAS',
+    images: [
+      {
+        url: '/logo/logoelectriobras-full.png', // Assuming a logo exists here or can be updated
+        width: 1200,
+        height: 630,
+        alt: 'Electriobras SAS',
+      },
+    ],
+    locale: 'es_CO',
+    type: 'website',
+  },
 };
 
 export default function RootLayout({

@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
@@ -9,11 +10,35 @@ import { Textarea } from '@/components/ui/textarea'; // Same for Textarea
 import { Send } from 'lucide-react';
 
 export function Contact() {
-    const { register, handleSubmit, formState: { errors } } = useForm();
+    const { register, handleSubmit, reset, formState: { errors } } = useForm();
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
-    const onSubmit = (data: any) => {
-        console.log(data);
-        // Handle submission logic (e.g., API call)
+    const onSubmit = async (data: any) => {
+        setIsSubmitting(true);
+        setSubmitStatus('idle');
+
+        try {
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+            });
+
+            if (response.ok) {
+                setSubmitStatus('success');
+                reset(); // Limpia el formulario
+            } else {
+                setSubmitStatus('error');
+            }
+        } catch (error) {
+            console.error('Error al enviar:', error);
+            setSubmitStatus('error');
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     return (
@@ -113,9 +138,24 @@ export function Contact() {
                             {errors.privacy && <p className="text-red-500 text-xs mt-[-10px]">{(errors.privacy as any).message}</p>}
 
                             <div className="space-y-4">
-                                <Button type="submit" size="lg" className="w-full md:w-auto min-w-[200px] h-12 text-base">
-                                    Enviar Cotización
-                                    <Send className="ml-2 w-4 h-4" />
+                                {submitStatus === 'success' && (
+                                    <div className="p-4 bg-green-50 text-green-700 text-sm rounded-lg border border-green-200">
+                                        ¡Su mensaje ha sido enviado correctamente! Nos pondremos en contacto pronto.
+                                    </div>
+                                )}
+                                {submitStatus === 'error' && (
+                                    <div className="p-4 bg-red-50 text-red-700 text-sm rounded-lg border border-red-200">
+                                        Hubo un error al enviar el mensaje. Por favor intente más tarde o contáctenos vía WhatsApp.
+                                    </div>
+                                )}
+                                <Button
+                                    type="submit"
+                                    size="lg"
+                                    disabled={isSubmitting}
+                                    className="w-full md:w-auto min-w-[200px] h-12 text-base transition-all"
+                                >
+                                    {isSubmitting ? 'Enviando...' : 'Enviar'}
+                                    {!isSubmitting && <Send className="ml-2 w-4 h-4" />}
                                 </Button>
                                 <p className="text-[10px] text-gray-500 leading-tight">
                                     Electriobras S.A.S. tratará sus datos conforme a la Ley 1581 de 2012.
