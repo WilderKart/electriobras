@@ -7,7 +7,7 @@ export async function POST(request: Request) {
     try {
         const { name, company, email, phone, projectType, message } = await request.json();
 
-        const data = await resend.emails.send({
+        const { data, error } = await resend.emails.send({
             from: 'Electriobras Web <info@electriobras.com>', // Debe coincidir con el dominio verificado en Resend
             to: 'info@electriobras.com',
             subject: `Nuevo mensaje de Contacto: ${name} - ${company}`,
@@ -23,6 +23,11 @@ export async function POST(request: Request) {
         <p>${message.replace(/\n/g, '<br/>')}</p>
       `,
         });
+
+        if (error) {
+            console.error('Error de API Resend:', error);
+            return NextResponse.json({ success: false, error: error.message }, { status: 400 });
+        }
 
         return NextResponse.json({ success: true, data });
     } catch (error) {
