@@ -13,7 +13,7 @@ export function Footer() {
                     <div className="space-y-4">
                         <Link
                             href="/"
-                            className="relative block h-12 w-48 brightness-0 invert opacity-90 transition-transform hover:scale-105"
+                            className="relative block h-20 w-56 md:h-24 md:w-64 transition-transform hover:scale-105"
                             onClick={(e) => {
                                 if (window.location.pathname === '/') {
                                     e.preventDefault();
@@ -22,7 +22,7 @@ export function Footer() {
                             }}
                         >
                             <Image
-                                src="/logo/logo_electriobras.png"
+                                src="/logo/logo_electriobras_v2.png"
                                 alt="Electriobras SAS Logo"
                                 fill
                                 className="object-contain"

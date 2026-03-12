@@ -1,7 +1,7 @@
 # Documento Oficial de Entrega
 **Proyecto:** Plataforma Web Corporativa Electriobras S.A.S.
-**Fecha de Entrega:** DD/MM/AAAA
-**Desarrollado por:** [Tu Nombre/Agencia - Technoultra]
+**Fecha de Entrega:** 27/02/2026
+**Desarrollado por:** Technoultra
 **Cliente:** Electriobras S.A.S.
 
 ---

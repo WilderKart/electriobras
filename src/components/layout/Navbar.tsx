@@ -40,7 +40,10 @@ export function Navbar() {
             <div className="container mx-auto px-6 flex justify-between items-center">
                 <Link
                     href="/"
-                    className="relative flex items-center h-12 w-48 transition-transform hover:scale-105"
+                    className={cn(
+                        "relative flex items-center transition-all duration-300 hover:scale-105 shrink-0",
+                        isScrolled ? "h-16 w-48 md:h-20 md:w-72 lg:h-24 lg:w-80" : "h-20 w-56 md:h-24 md:w-80 lg:h-32 lg:w-96"
+                    )}
                     onClick={(e) => {
                         if (window.location.pathname === '/') {
                             e.preventDefault();
@@ -49,11 +52,11 @@ export function Navbar() {
                     }}
                 >
                     <Image
-                        src="/logo/logo_electriobras.png"
+                        src="/logo/logo_electriobras_v2.png"
                         alt="Electriobras SAS Logo"
                         fill
                         className={cn(
-                            "object-contain transition-all duration-300",
+                            "object-contain object-left transition-all duration-300",
                             !isScrolled && "brightness-0 invert opacity-90" // Makes logo white on dark backgrounds
                         )}
                         priority

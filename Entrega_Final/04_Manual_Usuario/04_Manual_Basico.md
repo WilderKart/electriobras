@@ -17,10 +17,6 @@ Por este motivo, para los cambios visuales, de imágenes o estructurales profund
 ## 3. SEO Básico y Métricas
 La plataforma ya incluye dentro de su código una base de configuración técnica (SEO) optimizada para posicionar en el área metropolitana de Cali y el departamento del Valle del Cauca.
 
-### Verificación de Estadísticas (Google Analytics)
-1. Para ver el tráfico, procedencia de visitantes y el éxito del sitio, dirígete a [Google Analytics](https://analytics.google.com).
-2. Inicia sesión con la cuenta de Google (Gmail) que ha quedado asignada en el archivo `02_Credenciales_y_Accesos.md`.
-3. Podrás consultar gráficas sencillas e intuitivas sobre tus visitantes diarios.
 
 ## 4. Estándares de Seguridad Mínimos Incluidos
 1.  **Certificado SSL (https://):** Garantiza que toda información que fluye en la web (en especial datos de contacto) está completamente encriptada. 
@@ -29,7 +25,7 @@ La plataforma ya incluye dentro de su código una base de configuración técnic
 ## 5. Contacto para Soporte Técnico e Iteraciones
 Para cambiar imágenes de clientes, agregar un nuevo bloque de "Métricas", subir un nuevo "Servicio", o cualquier modificación general de la web, contacte a su equipo de desarrollo web. 
 
-**Nombre/Agencia:** [Tu Nombre / Agencia Technoultra]
-**Correo de Soporte:** [Tu Correo de Trabajo]
-**Teléfono de Soporte:** [Tu Número]
-*(Si tienes un nivel de SLA o paquete de mantenimiento mensual, puedes añadirlo aquí).*
+**Nombre/Agencia:** Technoultra --  technoultra.com
+**Correo de Soporte:** studio@technoultra.com
+**Teléfono de Soporte:** 3007296067
+

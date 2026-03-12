@@ -21,13 +21,21 @@ Acepto que:
 ### Firmas
 
 **Por Parte del Cliente (Electriobras S.A.S.)**
+
+
+
 ___________________________________________________
 Nombre Completo:
 Cargo:
 Firma:
 
 
+
+
 **Por Parte del Proveedor (Agencia / Desarrollador)**
+
+
+
 ___________________________________________________
 Nombre Completo:
 Cargo:
