@@ -34,7 +34,7 @@ const testimonials = [
         text: "Eficiencia y profesionalismo. Han demostrado un manejo experto en instalaciones complejas, cumpliendo siempre con los cronogramas estipulados.",
         author: "Carlos E. Restrepo",
         role: "Jefe de Mantenimiento",
-        company: "Kimberly Clark",
+        company: "Cerámica Italia",
         image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200&auto=format&fit=crop"
     }
 ];
